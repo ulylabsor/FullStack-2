@@ -1,0 +1,404 @@
+/* Mobile */
+@media (max-width: 900px) {
+    
+    .btn:hover {
+        transition: .6s;
+        transform: scale(1.03);
+    }
+    
+    .header {
+        background-color: rgba(31, 43, 54, 0.671);
+    }
+    
+    .header a:hover {
+      text-decoration: underline;
+    }
+    
+    /* slider */
+    .slider {
+        font-family: 'Raleway', sans-serif;
+        padding-top: 150px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.637)), url("../Assets/andrea-cau-nV7GJmSq3zc-unsplash.jpg") ; 
+        color: white;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+.slider h1 {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.slider h6 {
+   font-size: 18px;
+   line-height: 25px;
+   margin-bottom: 50px;
+}
+
+/* item */
+.item .produk {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 232px;
+    height: 275px;
+    background-color: white;
+    box-shadow: 0px 15px 30px rgba(71, 65, 65, 0.712);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.item .produk h5 {
+    font-weight: 800;
+    color: rgb(77, 73, 73);
+}
+
+.item .produk h6 {
+    font-weight: bolder;
+    color: rgb(165, 152, 152);
+    font-size: 14px;
+}
+
+/* onkos kirim */
+.ongkos-kirim .ongkir-konten {
+    background-color: rgb(191, 218, 117);
+    height: auto;
+    width: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding-top: 50px;
+    color: white;
+
+}
+
+.ongkos-kirim .ongkir-konten h3 {
+    font-weight: bolder;
+}
+
+.ongkos-kirim .ongkir-konten h6 {
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.ongkos-kirim .ongkir-konten 
+.form-control {
+    border-radius: 10px;
+}
+
+.ongkos-kirim .ongkir-konten 
+.btn {
+    border-radius: 10px;
+    width: 150px;
+    height: auto;
+}
+
+
+.ongkos-kirim .ongkir-konten 
+.lacak-kiriman .form-control {
+    margin-top: 38px;
+} 
+
+.ongkos-kirim .ongkir-konten 
+.lacak-kiriman {
+  margin-top: 50px;
+}
+
+/* ekspedisi */
+.ekspedisi {
+    margin-top : 20px;
+    background-color: rgb(187, 25, 25);
+}
+
+.judul-ekspedisi {
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.judul-ekspedisi h1 {
+    font-size: 40px;
+    font-family: "anton" ;
+}
+
+.judul-ekspedisi hr {
+    background-color: white;
+    
+}
+
+.judul-ekspedisi .btn {
+    width: 217px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* ask-ours */
+.ask-ours {
+    background: linear-gradient(to right, rgba(153, 144, 144, 0.432), rgba(0, 0, 0, 0.527)) ,url("../Assets/code.desktop.png") ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.ask-ours h1 {
+    font-family: "anton";
+}
+
+/* powered */
+.powered {
+    background-color: #655A5A;
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.powered h1 {
+    font-size: 25px;
+}
+
+.powered hr {
+   border-color: white;
+   width: 80px;
+}
+
+.powered img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* footer */
+.footer {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer hr {
+    border-color: white;
+}
+
+.footer h6 {
+    font-size: 14px;
+}
+
+
+
+/* Produk & layanan */
+.judul-layanan {
+    padding-top: 120px;
+}
+
+.judul-layanan h1 {
+    font-size: 40px;
+    font-weight: bold;
+   
+}
+
+.judul-layanan h6 {
+    font-size: 14px ;
+    font-weight: 600;
+    color: #777070;
+}
+
+
+/* layanan kami */
+.layanan-kami {
+    /* background-color: blue; */
+    background-image: linear-gradient( to bottom, #6765ED, #CEBFBF);
+    height: auto;
+    width: auto;
+    margin-left: 83px;
+    border-radius: 40px 0px 0px 40px;
+    margin-top : 50px;
+}
+
+.kategori-layanan {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    height: 338px;
+    width: 285px;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0px 4px 20px black;
+}
+
+.kategori-layanan:hover {
+    transition: .6s;
+    transform: scale(1.03);
+}
+
+
+.kategori-layanan h5 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.kategori-layanan h6 {
+    font-size: 14px ;
+    font-weight: 600;
+    color: #777070;
+}
+
+.tombol .btn {
+    border-radius: 10px;
+    width: 217px;
+}
+
+
+/* judul-apa-kata-mereka */
+.judul-apa-kata-mereka {
+    margin-top: 50px;
+}
+
+
+/* ulasan & Rating */
+.ulasan-rating .btn:hover {
+    transition: .6s;
+    transform: scale(1.03);
+    background-color: rgb(230, 41, 41), 73, 37);
+}
+
+
+.ulasan-rating {
+    margin-top: 20px;
+    margin-bottom:100px;
+    text-align: center;
+}
+
+.ulasan-rating h6 {
+    line-height: 30px;
+    font-weight: bold;
+    color: #312e2e;
+    
+}
+
+.rating {
+    margin-top:10px;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(46, 44, 44, 0.596);
+    height: 251px;
+    width: 212px;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-left: 100px;
+}
+
+.rating h1 {
+    font-weight: bold;
+    font-size:80px;
+}
+
+.rating h6 {
+    font-weight: bold;
+    font-family: 'raleway';
+}
+
+/* judul yes */
+.judul-yes {
+    background-color: #807BE5;
+    height: 350px;
+    width: 100%;
+    padding-top:100px;
+    color:white;
+    border-radius: 0px 0px 40px 40px;
+    margin-bottom: 150px;
+}
+
+/* cek biaya yes */
+.cek-biaya-yes {
+    background-color: white;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.616);
+    
+}
+
+.cek-biaya-yes h5 {
+   margin: 10px;
+   font-size: 18px ;
+}
+
+.cek-biaya-yes p {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.cek-biaya-yes .btn {
+    height: auto;
+    width: 100px;
+    border-radius: 10px;
+}
+
+
+
+/* biaya ongkir */
+.judul-biaya-ongkir {
+    background-color: #807BE5;
+    height: 550px;
+    width: 100%;
+    padding-top:100px;
+    color:white;
+    border-radius: 0px 0px 40px 40px;
+    margin-bottom: 300px;
+    
+}
+
+
+.biaya-ongkir {
+    background-color: white;
+    height: 600px;
+    width: 100%;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.616);
+    /* overflow: scroll; */
+}
+
+.biaya-ongkir img {
+    width: auto;
+    height: 100px;
+    margin-top: 200px;
+}
+
+
+/* Ulasan rating */
+.judul-ulasan-rating{
+    background-color: #807BE5;
+    height: auto;
+    width: 100%;
+    padding-top:100px;
+    color:white;
+    border-radius: 0px 0px 40px 40px;
+    margin-bottom:100px;
+}
+
+.halaman-ulasan-rating{
+    background-color: white;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.616);
+    padding: 50px;
+}
+
+}

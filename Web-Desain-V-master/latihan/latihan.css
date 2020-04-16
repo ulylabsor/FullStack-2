@@ -1,0 +1,47 @@
+.latihan-5 {
+    background-color: blue;
+    height: auto;
+}
+
+
+
+.latihan-5 .navigasi li {
+    color: white;
+    font-size: 15px;
+    display: block;
+    float: right;
+    /* jarak antara konten */
+    margin-left: 20px ;
+}
+
+
+/* hover digunakan
+untuk memberikan efek saat disentuh */
+.latihan-5 .navigasi li:hover {
+    text-decoration: underline;
+    color:  yellow;
+}
+
+.tombol {
+    background-color: chartreuse;
+}
+
+.tombol button {
+    background-color: rgb(103, 31, 236);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+}
+
+.tombol button:hover {
+    background-color: rgba(160, 160, 27, 0.616);
+}
+
+.tombol-2 .btn {
+    height: 50px;
+    width: 100px;
+}
+
+
+
