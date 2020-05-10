@@ -1,0 +1,21 @@
+Database Ekspedisi
+
+DAFTAR TABEL
+1. Data Barang
+2. Data ongkir
+3. Data wilayah
+4. Data Layanan
+5. Data Kurir
+6. Data Biaya (harga*berat)
+7. Data Pengguna (Admin, Kurir, Konsumen)
+    - table users -> id_user PK 1
+		     username (budi)
+                     password
+	     	     level (Admin, Kurir, Konsumen)
+    - table profil -> nama_depan (Budiana)
+		      nama_belakang
+			jenis_kelamin
+			alamat
+			kontak
+			id_user FK 1
+8. Data tracking

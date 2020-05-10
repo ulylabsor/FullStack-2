@@ -1,3 +1,5 @@
+<?php require 'koneksi/function.php' ?>
+
 <!doctype html>
 <html lang="en">
 

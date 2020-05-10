@@ -23,36 +23,22 @@
 <section class="layanan-kami">
    <div class="container">
       <div class="row justify-content-center">
-         <div class="col-lg-4 col-sm-4">
-            <div class="kategori-layanan text-center">
-               <img src="./Assets/icon/ic_car.png">
-               <h5>YES</h5>
-               <p>
-                  <h6>YES adalah layanan dengan waktu penyampaian di tujuan keesokan hari (termasuk Minggu dan
-                     hari libur nasional)</h6>
-               </p>
-               <div class="tombol">
-                  <a href="?page=layanan-yes">
-                     <button type="button" class="btn btn-outline-dark">Pilih Layanan</button>
-                  </a>
+         <?php foreach ($dataLayanan as $data) : ?>
+            <div class="col-lg-4 col-sm-4">
+               <div class="kategori-layanan text-center">
+                  <img src="./Assets/icon/ic_car.png">
+                  <h5><?php echo $data['layanan'] ?></h5>
+                  <p>
+                     <h6><?php echo $data['keterangan'] ?></h6>
+                  </p>
+                  <div class="tombol">
+                     <a href="?page=layanan-<?php echo strtolower($data['layanan']) ?>">
+                        <button type="button" class="btn btn-outline-dark">Pilih Layanan</button>
+                     </a>
+                  </div>
                </div>
             </div>
-         </div>
-         <div class="col-lg-4 col-sm-4">
-            <div class="kategori-layanan text-center">
-               <img src="./Assets/icon/ic_paket.png">
-               <h5>REG</h5>
-               <p>
-                  <h6>REGULER adalah layanan pengiriman ke seluruh wilayah Indonesia, dengan perkiraan waktu
-                     penyampaian kiriman 1-7 hari kerja,</h6>
-               </p>
-               <div class="tombol">
-                  <a href="?page=layanan-reg">
-                     <button type="button" class="btn btn-outline-dark">Pilih Layanan</button>
-                  </a>
-               </div>
-            </div>
-         </div>
+         <?php endforeach ?>
       </div>
    </div>
 </section>
