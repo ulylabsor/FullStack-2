@@ -21,6 +21,17 @@ switch ($page) {
       include 'view/ulasan-rating.php';
       break;
 
+
+      //LOGIN 
+   case 'login':
+      include 'view/login.php';
+      break;
+   case 'act-login':
+      include 'modul/act-login.php';
+      break;
+   case 'act-logout':
+      include 'modul/act-logout.php';
+      break;
    default:
       include 'view/404.php';
       break;
