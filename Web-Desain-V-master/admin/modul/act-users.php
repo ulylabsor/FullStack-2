@@ -23,6 +23,30 @@ if (isset($_POST['btn-AddUsers'])) {
    }
 }
 
+if (isset($_POST['btn-EditUsers'])) {
+   $idUser       = $_POST['idUser'];
+   $username     = $_POST['username'];
+   $email        = $_POST['email'];
+   $password     = md5($_POST['password']);
+   $role         = $_POST['role'];
+   $status       = isset($_POST['status']) ? $_POST['status'] == 'on' ? 'Y' : 'N' : 'N';
+   $namaDepan    = $_POST['namaDepan'];
+   $namaBelakang = $_POST['namaBelakang'];
+
+   //UBAH DATA TABLE users
+   $sql = "UPDATE `users` SET `username`= '$username', `email`='$email', `password`='$password', `updated_at`=CURRENT_TIMESTAMP(), `aktif`='$status', `id_role` ='$role' WHERE id_user = '$idUser'";
+   $updateUsers = mysqli_query($koneksi, $sql);
+
+   if ($updateUsers) {
+      //UPDATE TABLE users_profile
+      $sql2 = "UPDATE `users_profile` SET `nama_depan` ='$namaDepan', `nama_belakang` ='$namaBelakang' WHERE id_user = '$idUser'";
+      $updateProfil = mysqli_query($koneksi, $sql2);
+
+      notif('Berhasil ubah data users', 1);
+      header("Location: ?page=users");
+   }
+}
+
 
 if (isset($_GET['aksi'])) {
    if ($_GET['aksi'] == 'delete') {
