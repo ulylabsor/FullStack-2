@@ -3,7 +3,7 @@
       <ul class="nav flex-column">
          <?php if ($_SESSION['idRole'] == 1) : ?>
             <li class="nav-item">
-               <a class="nav-link active" href="#">
+               <a class="nav-link <?= isset($_GET['page']) ? $_GET['page'] == 'dashboard' ? 'active' : '' : 'active' ?>" href="?page=dashboard">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                </a>
@@ -23,13 +23,13 @@
             </h6>
             <ul class="nav flex-column mb-2">
                <li class="nav-item">
-                  <a class="nav-link" href="?page=users">
+                  <a class="nav-link <?= $_GET['page'] == 'users' ? 'active' : '' ?>" href="?page=users">
                      <i class="fa fa-users mr-2"></i>
                      Kelola Users
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link <?= $_GET['page'] == 'profil' ? 'active' : '' ?>" href="?page=profil">
                      <i class="fa fa-user mr-2"></i>
                      Profil
                   </a>

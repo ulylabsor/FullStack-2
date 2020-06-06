@@ -8,6 +8,12 @@ switch ($page) {
    case 'home':
       include 'view/home.php';
       break;
+   case 'dashboard':
+      include 'view/dashboard.php';
+      break;
+   case 'profil':
+      include 'view/profil.php';
+      break;
    case 'users':
       include 'view/users.php';
       break;

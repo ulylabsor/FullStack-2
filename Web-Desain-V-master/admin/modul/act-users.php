@@ -34,7 +34,11 @@ if (isset($_POST['btn-EditUsers'])) {
    $namaBelakang = $_POST['namaBelakang'];
 
    //UBAH DATA TABLE users
-   $sql = "UPDATE `users` SET `username`= '$username', `email`='$email', `password`='$password', `updated_at`=CURRENT_TIMESTAMP(), `aktif`='$status', `id_role` ='$role' WHERE id_user = '$idUser'";
+   if ($_POST['password'] == '') {
+      $sql = "UPDATE `users` SET `username`= '$username', `email`='$email', `updated_at`=CURRENT_TIMESTAMP(), `aktif`='$status', `id_role` ='$role' WHERE id_user = '$idUser'";
+   } else {
+      $sql = "UPDATE `users` SET `username`= '$username', `email`='$email', `password`='$password', `updated_at`=CURRENT_TIMESTAMP(), `aktif`='$status', `id_role` ='$role' WHERE id_user = '$idUser'";
+   }
    $updateUsers = mysqli_query($koneksi, $sql);
 
    if ($updateUsers) {
@@ -46,7 +50,6 @@ if (isset($_POST['btn-EditUsers'])) {
       header("Location: ?page=users");
    }
 }
-
 
 if (isset($_GET['aksi'])) {
    if ($_GET['aksi'] == 'delete') {

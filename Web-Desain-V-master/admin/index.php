@@ -23,8 +23,9 @@ if (empty($_SESSION)) {
 
          <?php include 'menu.php' ?>
 
-         <?php include 'content.php' ?>
-
+         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+            <?php include 'content.php' ?>
+         </main>
       </div>
    </div>
 
