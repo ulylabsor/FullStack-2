@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 require 'koneksi/function-admin.php';
 if (empty($_SESSION)) {
    header("Location: ../?page=login");

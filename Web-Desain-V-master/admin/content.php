@@ -3,10 +3,10 @@ $page = isset($_GET['page']) ? $_GET['page'] : '';
 
 switch ($page) {
    case '':
-      include 'view/home.php';
+      include 'view/dashboard.php';
       break;
    case 'home':
-      include 'view/home.php';
+      include 'view/dashboard.php';
       break;
    case 'dashboard':
       include 'view/dashboard.php';
@@ -19,6 +19,9 @@ switch ($page) {
       break;
    case 'act-users':
       include 'modul/act-users.php';
+      break;
+   case 'act-profil':
+      include 'modul/act-profil.php';
       break;
 
 

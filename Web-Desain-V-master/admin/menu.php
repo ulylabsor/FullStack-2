@@ -23,13 +23,13 @@
             </h6>
             <ul class="nav flex-column mb-2">
                <li class="nav-item">
-                  <a class="nav-link <?= $_GET['page'] == 'users' ? 'active' : '' ?>" href="?page=users">
+                  <a class="nav-link <?= isset($_GET['page']) ? $_GET['page'] == 'users' ? 'active' : '' : '' ?>" href="?page=users">
                      <i class="fa fa-users mr-2"></i>
                      Kelola Users
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link <?= $_GET['page'] == 'profil' ? 'active' : '' ?>" href="?page=profil">
+                  <a class="nav-link <?= isset($_GET['page']) ? $_GET['page'] == 'profil' ? 'active' : '' : '' ?>" href="?page=profil">
                      <i class="fa fa-user mr-2"></i>
                      Profil
                   </a>
