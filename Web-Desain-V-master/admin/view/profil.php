@@ -108,7 +108,7 @@
              <div class="form-group">
                 <div class="col-xs-12">
                    <br>
-                   <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                   <button class="btn btn-lg btn-success" type="submit" name="ubahProfil"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
                    <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
                 </div>
              </div>
@@ -117,37 +117,46 @@
 
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
              <br>
-             <div class="form-group">
-                <div class="col-xs-6">
-                   <label for="username">Username</label>
-                   <input type="text" class="form-control" name="username" id="username" placeholder="Enter your username" title="enter your username">
+             <form action="?page=act-profil" method="post">
+                <div class="form-group">
+                   <div class="col-xs-6">
+                      <label for="username">Username</label>
+                      <input type="text" class="form-control" name="username" id="username" placeholder="Enter your username" value="<?= $data['username'] ?>" title="enter your username">
+                   </div>
                 </div>
-             </div>
-             <div class="form-group">
-                <div class="col-xs-6">
-                   <label for="email">Email</label>
-                   <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                <div class="form-group">
+                   <div class="col-xs-6">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" value="<?= $data['email'] ?>" title="enter your email.">
+                   </div>
                 </div>
-             </div>
-             <div class="form-group">
-                <div class="col-xs-6">
-                   <label for="passwordLama">Password Lama</label>
-                   <input type="password" class="form-control" name="passwordLama" id="passwordLama" placeholder="password Lama" title="enter your old password.">
+                <div class="form-group">
+                   <div class="col-xs-6">
+                      <label for="passwordLama">Password Lama</label>
+                      <input type="password" class="form-control" name="passwordLama" id="passwordLama" placeholder="password Lama" title="enter your old password.">
+                   </div>
                 </div>
-             </div>
 
-             <div class="form-group">
-                <div class="col-xs-6">
-                   <label for="passwordBaru">Password Baru</label>
-                   <input type="password" class="form-control" name="passwordBaru" id="passwordBaru" placeholder="password Baru" title="Enter your new password.">
+                <div class="form-group">
+                   <div class="col-xs-6">
+                      <label for="passwordBaru">Password Baru</label>
+                      <input type="password" class="form-control" name="passwordBaru" id="passwordBaru" placeholder="password Baru" title="Enter your new password.">
+                   </div>
                 </div>
-             </div>
-             <div class="form-group">
-                <div class="col-xs-6">
-                   <label for="passwordBaru">Ulangi Password Baru</label>
-                   <input type="password" class="form-control" name="passwordBaru2" id="passwordBaru2" placeholder="Enter new password again" title="Enter your new password again.">
+                <div class="form-group">
+                   <div class="col-xs-6">
+                      <label for="passwordBaru">Ulangi Password Baru</label>
+                      <input type="password" class="form-control" name="passwordBaru2" id="passwordBaru2" placeholder="Enter new password again" title="Enter your new password again.">
+                   </div>
                 </div>
-             </div>
+                <div class="form-group">
+                   <div class="col-xs-12">
+                      <br>
+                      <button class="btn btn-lg btn-success" type="submit" name="ubahPassword"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                      <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                   </div>
+                </div>
+             </form>
           </div>
        </div>
 
