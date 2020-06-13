@@ -23,7 +23,7 @@
 <section class="layanan-kami">
    <div class="container">
       <div class="row justify-content-center">
-         <?php foreach ($dataLayanan as $data) : ?>
+         <?php foreach (readLayanan() as $data) : ?>
             <div class="col-lg-4 col-sm-4">
                <div class="kategori-layanan text-center">
                   <img src="./Assets/icon/ic_car.png">

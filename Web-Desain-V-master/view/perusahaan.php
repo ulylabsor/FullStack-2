@@ -121,7 +121,14 @@
                               dengan menginput kota asal, tujuan dan berat barang </h6>
                         </p>
                         <p>
-                           <input class="form-control" type="text" placeholder="Kota Asal">
+                           <!-- <input class="form-control" type="text" placeholder="Kota Asal"> -->
+                           <select name="kotaasal" id="" class="form-control">
+                              <?php
+                              $query = mysqli_query($koneksi, "SELECT * FROM kota");
+                              while ($kota = mysqli_fetch_assoc($query)) { ?>
+                                 <option value="<?= $kota['id_kota'] ?>"><?= $kota['kota'] ?></option>
+                              <?php } ?>
+                           </select>
                         </p>
                         <p>
                            <input class="form-control" type="text" placeholder="Kota Tujuan">
