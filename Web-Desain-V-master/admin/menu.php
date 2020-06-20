@@ -27,6 +27,12 @@
                      Data Layanan
                   </a>
                </li>
+               <li class="nav-item">
+                  <a class="nav-link <?= isset($_GET['page']) ? $_GET['page'] == 'barang' ? 'active' : '' : '' ?>" href="?page=barang">
+                     <i class="fa fa-list mr-2"></i>
+                     Data Barang
+                  </a>
+               </li>
 
             </ul>
 
