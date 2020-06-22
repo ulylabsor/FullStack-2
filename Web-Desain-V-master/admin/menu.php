@@ -28,9 +28,9 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link <?= isset($_GET['page']) ? $_GET['page'] == 'barang' ? 'active' : '' : '' ?>" href="?page=barang">
+                  <a class="nav-link <?= isset($_GET['page']) ? $_GET['page'] == 'transaksi' ? 'active' : '' : '' ?>" href="?page=transaksi">
                      <i class="fa fa-list mr-2"></i>
-                     Data Barang
+                     Data Transaksi
                   </a>
                </li>
 
