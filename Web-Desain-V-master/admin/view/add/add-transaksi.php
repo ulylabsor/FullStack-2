@@ -6,8 +6,8 @@
    <div class="row">
       <div class="col-md-4">
          <div class="form-group">
-            <label for="kd-transaksi">Kode Transaksi</label>
-            <input type="text" name="kd-transaksi" class="form-control">
+            <label for="kd_transaksi">Kode Transaksi</label>
+            <input type="text" name="kd_transaksi" class="form-control" readonly value="<?= generateIdTransaksi() ?>">
          </div>
       </div>
    </div>
@@ -45,6 +45,12 @@
    </div>
 
    <div class="row">
+      <div class="col-md-2">
+         <div class="form-group">
+            <label for="kodeBarang">Kode Barang</label>
+            <input type="text" name="kodeBarang" class="form-control">
+         </div>
+      </div>
       <div class="col-md-5">
          <div class="form-group">
             <label for="namaBarang">Nama Barang</label>
@@ -59,7 +65,7 @@
             <?php endforeach ?>
          </select>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-2">
          <div class="form-group">
             <label for="beratBarang">Berat Barang</label>
             <input type="text" name="beratBarang" class="form-control">

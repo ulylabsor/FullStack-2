@@ -35,6 +35,6 @@ if (isset($_POST['btn-EditLayanan'])) {
 
    if ($updateLayanan) {
       notif('Berhasil Ubah data layanan', 1);
-      header("Location: ?page=layanan");
+      header("Location: ?page"=layanan");
    }
 }

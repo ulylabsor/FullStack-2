@@ -53,3 +53,8 @@ function login($email, $password)
       return "Username or email is not registered";
    }
 }
+
+
+// header("Content-type: application/vnd-ms-excel");
+// header("Content-Disposition: attachment; filename=Data Mahasiswa.xls");
+// include "data.php";

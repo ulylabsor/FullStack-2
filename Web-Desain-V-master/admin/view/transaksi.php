@@ -9,3 +9,7 @@
       </div>
    </div>
 </div>
+<?=
+   (isset($_SESSION['notif'])) ? $_SESSION['notif'] : '';
+unset($_SESSION['notif'])
+?>

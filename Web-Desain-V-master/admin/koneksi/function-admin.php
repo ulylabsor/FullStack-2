@@ -14,3 +14,18 @@ function notif($pesan, $jenis)
       $_SESSION['notif'] = "<div class='alert alert-danger'>$pesan</div>";
    }
 }
+
+function generateIdTransaksi($length = 8)
+{
+   $genpassword = "";
+   $possible = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   $i = 0;
+   while ($i < $length) {
+      $char = substr($possible, mt_rand(0, strlen($possible) - 1), 1);
+      if (!strstr($genpassword, $char)) {
+         $genpassword .= $char;
+         $i++;
+      }
+   }
+   return $genpassword;
+}
